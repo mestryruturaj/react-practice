@@ -1,11 +1,19 @@
-import logo from "../../assets/GloboLogo.png";
+import globomanticsLogo from "../../assets/GloboLogo.png";
 
 function Banner(): React.JSX.Element {
   return (
     <>
-      <header>
-        <img src={logo} alt="Globomantics logo" />
-        <h1>Providing houses all over the world</h1>
+      <header className="row mb-4">
+        <div className="col-5">
+          <img
+            src={globomanticsLogo}
+            alt="Globomantics logo"
+            className="logo"
+          />
+        </div>
+        <div className="col-7 mt-5">
+          <h1>Providing houses all over the world</h1>
+        </div>
       </header>
     </>
   );
