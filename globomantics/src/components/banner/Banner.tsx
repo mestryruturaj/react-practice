@@ -1,7 +1,11 @@
 import globomanticsLogo from "../../assets/GloboLogo.png";
 import styles from "./Banner.module.css";
 
-function Banner(): React.JSX.Element {
+type BannerProps = {
+  headerText: string;
+};
+
+function Banner(props: BannerProps): React.JSX.Element {
   return (
     <>
       <header className="row mb-4">
@@ -13,7 +17,7 @@ function Banner(): React.JSX.Element {
           />
         </div>
         <div className={`col-7 mt-5 ${styles.subtitleStyle}`}>
-          <h1>Providing houses all over the world</h1>
+          <h1>{props.headerText}</h1>
         </div>
       </header>
     </>

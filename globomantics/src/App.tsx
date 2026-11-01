@@ -4,7 +4,7 @@ import Banner from "./components/banner/Banner";
 function App() {
   return (
     <>
-      <Banner></Banner>
+      <Banner headerText="Providing houses all over the world" />
     </>
   );
 }
