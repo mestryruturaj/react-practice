@@ -12,7 +12,7 @@ function Banner(): React.JSX.Element {
             className={styles.logo}
           />
         </div>
-        <div className="col-7 mt-5">
+        <div className={`col-7 mt-5 ${styles.subtitleStyle}`}>
           <h1>Providing houses all over the world</h1>
         </div>
       </header>
