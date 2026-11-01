@@ -1,4 +1,5 @@
 import globomanticsLogo from "../../assets/GloboLogo.png";
+import styles from "./Banner.module.css";
 
 function Banner(): React.JSX.Element {
   return (
@@ -8,7 +9,7 @@ function Banner(): React.JSX.Element {
           <img
             src={globomanticsLogo}
             alt="Globomantics logo"
-            className="logo"
+            className={styles.logo}
           />
         </div>
         <div className="col-7 mt-5">
